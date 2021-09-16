@@ -5,7 +5,7 @@ Works With 4 Servers (NAME MUST BE SAME ex. 'Garrys Server 1' and 'Garrys Modded
 Pre Requisites
 ==============
 - Website With PHP And FTP Access or XAMPP running Apache
-- MySQL / MariaDB Database e.g XAMPP running MySql
+- MySQL / MariaDB Database e.g XAMPP running MySql (for each server make 1 table but at the end add _servernum ex. {tablename}, {tablename}_2, {tablename}_3, {tablename}_4 is for 4 servers - {tablename} is the name of your mysql table)
 
 
 

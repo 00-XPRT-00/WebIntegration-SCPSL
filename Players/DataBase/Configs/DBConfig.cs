@@ -40,7 +40,7 @@ namespace WebIntegrationPlayers.DataBase.Configs
         /// <summary>
         /// The Table Name Inside The MySql Server
         /// </summary>
-        [Description("The Table Name Inside The Database In The MySql Server (if more than 1 server it will need another table created with _2 added or _3 so on for how many servers you are running also you dont need to add them to this config)")]
+        [Description("The Table Name Inside The Database In The MySql Server")]
         public string TableName { get; set; } = "wi_players";
 
         /// <summary>

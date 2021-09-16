@@ -68,7 +68,8 @@ namespace WebIntegrationPlayers.DataBase
                 { "dbtable", $"{tbl}" },
                 { "idcol", $"{IDCol}" },
                 { "usercol", $"{UsernameCol}" },
-                { "rankcol", $"{UserRankCol}" }
+                { "rankcol", $"{UserRankCol}" },
+                { "maindbtbl", $"{WebIntegrationPlayers.Instance.Config.db.TableName}" }
             };
 
             var content = new FormUrlEncodedContent(values);
