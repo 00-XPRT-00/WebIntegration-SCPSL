@@ -19,6 +19,6 @@ namespace WebIntegrationPlayers
         /// Adds The Database Configs To Config File
         /// </summary>
         [Description("Database related configs")]
-        public DBConfig DB { get; private set; } = new DBConfig();
+        public DBConfig db { get; private set; } = new DBConfig();
     }
 }

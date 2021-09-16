@@ -3,6 +3,7 @@ using Exiled.API.Features;
 
 using Server = Exiled.Events.Handlers.Server;
 using Player = Exiled.Events.Handlers.Player;
+using System;
 
 namespace WebIntegrationPlayers
 {
@@ -11,11 +12,11 @@ namespace WebIntegrationPlayers
     /// </summary>
     public class WebIntegrationPlayers : Plugin<Config>
     {
-        private static readonly WebIntegrationPlayers InstanceValue = new WebIntegrationPlayers();
+        private static readonly Lazy<WebIntegrationPlayers> InstanceValue = new Lazy<WebIntegrationPlayers>(() => new WebIntegrationPlayers());
         /// <summary>
         /// Gets the <see cref="WebIntegrationPlayers"/> instance.
         /// </summary>
-        public static WebIntegrationPlayers Instance => InstanceValue;
+        public static WebIntegrationPlayers Instance => InstanceValue.Value;
 
         public override PluginPriority Priority { get; } = PluginPriority.Medium;
 
@@ -29,12 +30,13 @@ namespace WebIntegrationPlayers
 
         public override void OnEnabled()
         {
-            base.OnEnabled();
+            RegisterEvents();
+            Log.Info("Plugin Loaded");
         }
 
         public override void OnDisabled()
         {
-            base.OnDisabled();
+            unRegisterEvents();   
         }
 
         public void RegisterEvents()
@@ -43,8 +45,21 @@ namespace WebIntegrationPlayers
             server = new Events.ServerEvents();
 
             Player.Left += player.OnLeft;
-            Player.Joined += player.OnJoin;
+            Player.Verified += player.OnJoin;
             Server.EndingRound += server.RoundEnd;
+        }
+
+        public void unRegisterEvents()
+        {
+            player = new Events.PlayerEvents();
+            server = new Events.ServerEvents();
+
+            Player.Left -= player.OnLeft;
+            Player.Verified -= player.OnJoin;
+            Server.EndingRound -= server.RoundEnd;
+
+            player = null;
+            server = null;
         }
     }
 }

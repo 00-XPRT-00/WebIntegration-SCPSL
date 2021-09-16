@@ -5,12 +5,7 @@ G:\WebIntegration-Exiled\Players\Players\obj\Debug\WebIntegration-Players.dll
 G:\WebIntegration-Exiled\Players\Players\obj\Debug\WebIntegration-Players.pdb
 G:\WebIntegration-Exiled\WebIntegration\Players\obj\Debug\Players.csproj.AssemblyReference.cache
 G:\WebIntegration-Exiled\WebIntegration\Players\obj\Debug\Players.csproj.CoreCompileInputs.cache
-G:\WebIntegration-Exiled\WebIntegration\Players\obj\Debug\WebIntegration-Players.dll
-G:\WebIntegration-Exiled\WebIntegration\Players\obj\Debug\WebIntegration-Players.pdb
-G:\WebIntegration-Exiled\WebIntegration\Players\bin\Debug\WebIntegration-Players.dll
-G:\WebIntegration-Exiled\WebIntegration\Players\bin\Debug\WebIntegration-Players.pdb
 G:\WebIntegration-Exiled\WebIntegration\Players\bin\Debug\Assembly-CSharp.dll
-G:\WebIntegration-Exiled\WebIntegration\Players\bin\Debug\Exiled.API.dll
 G:\WebIntegration-Exiled\WebIntegration\Players\bin\Debug\Exiled.Events.dll
 G:\WebIntegration-Exiled\WebIntegration\Players\bin\Debug\Exiled.Loader.dll
 G:\WebIntegration-Exiled\WebIntegration\Players\bin\Debug\Exiled.Updater.dll
@@ -83,3 +78,9 @@ G:\WebIntegration-Exiled\WebIntegration\Players\bin\Debug\UnityEngine.ARModule.d
 G:\WebIntegration-Exiled\WebIntegration\Players\bin\Debug\UnityEngine.XRModule.dll
 G:\WebIntegration-Exiled\WebIntegration\Players\bin\Debug\UnityEngine.InputModule.dll
 G:\WebIntegration-Exiled\WebIntegration\Players\obj\Debug\Players.csproj.CopyComplete
+G:\WebIntegration-Exiled\WebIntegration\Players\bin\Debug\WebIntegrationPlayers.dll.config
+G:\WebIntegration-Exiled\WebIntegration\Players\bin\Debug\WebIntegrationPlayers.dll
+G:\WebIntegration-Exiled\WebIntegration\Players\bin\Debug\WebIntegrationPlayers.pdb
+G:\WebIntegration-Exiled\WebIntegration\Players\obj\Debug\WebIntegrationPlayers.dll
+G:\WebIntegration-Exiled\WebIntegration\Players\obj\Debug\WebIntegrationPlayers.pdb
+G:\WebIntegration-Exiled\WebIntegration\Players\bin\Debug\Exiled.API.dll

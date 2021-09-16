@@ -41,24 +41,24 @@ namespace WebIntegrationPlayers.DataBase.Configs
         /// The Table Name Inside The MySql Server
         /// </summary>
         [Description("The Table Name Inside The Database In The MySql Server")]
-        public string TableName { get; set; } = "wi_players";
+        public string Table_Name { get; set; } = "wi_players";
 
         /// <summary>
         /// The User Id Col Inside Table
         /// </summary>
         [Description("The User ID Column Name Inside The Table")]
-        public string TableIDCol { get; set; } = "userid";
+        public string Table_id_col { get; set; } = "userid";
 
         /// <summary>
         /// User Name Col Inside Table
         /// </summary>
         [Description("The Username Column Name Inside The Table")]
-        public string TableUNCol { get; set; } = "username";
+        public string Table_un_col { get; set; } = "username";
 
         /// <summary>
         /// User Rank Col Inside Table
         /// </summary>
         [Description("The User Rank Column Name Inside The Table")]
-        public string TableURCol { get; set; } = "userrank";
+        public string Table_ur_col { get; set; } = "userrank";
     }
 }
