@@ -15,6 +15,9 @@ namespace WebIntegrationPlayers
         [Description("Wether or not the plugin is active")]
         public bool IsEnabled { get; set; } = true;
         
+        [Description("The name of the main server (not needed if only 1 server - used to identify all servers apart - put {server_num} where the server number is)")]
+        public string MainServerName { get; set; } = "";
+         
         [Description("The message sent when the server is waiting for players to join")]
         public string WaitingForPlayers { get; set; } = "Server Is Waiting For Players.";
 

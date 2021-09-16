@@ -23,17 +23,12 @@ namespace WebIntegrationPlayers.DataBase
         /// <summary>
         /// The MySql Server Password
         /// </summary>
-        public string Pass { get; } = WebIntegrationPlayers.Instance.Config.db.DBPass;
+        public string Pass { get; } = WebIntegrationPlayers.Instance.Config.db.dbPass;
 
         /// <summary>
         /// The MySql Server Database Name
         /// </summary>
-        public string DBName { get; } = WebIntegrationPlayers.Instance.Config.db.DBName;
-
-        /// <summary>
-        /// The MySql Server Table Name
-        /// </summary>
-        public string TableName { get; } = WebIntegrationPlayers.Instance.Config.db.TableName;
+        public string DBName { get; } = WebIntegrationPlayers.Instance.Config.db.dbName;
 
         /// <summary>
         /// The Name For The User ID Column In The Table
@@ -57,7 +52,7 @@ namespace WebIntegrationPlayers.DataBase
         /// <param name="id"></param>
         /// <param name="username"></param>
         /// <param name="rank"></param>
-        public async void insplr(int id, string username, string rank)
+        public async void insplr(int id, string username, string rank, string tbl)
         {
             var values = new Dictionary<string, string>
             {
@@ -70,7 +65,7 @@ namespace WebIntegrationPlayers.DataBase
                 { "dbuser", $"{User}" },
                 { "dbpass", $"{Pass}" },
                 { "dbname", $"{DBName}" },
-                { "dbtable", $"{TableName}" },
+                { "dbtable", $"{tbl}" },
                 { "idcol", $"{IDCol}" },
                 { "usercol", $"{UsernameCol}" },
                 { "rankcol", $"{UserRankCol}" }
@@ -86,7 +81,7 @@ namespace WebIntegrationPlayers.DataBase
         /// Delete A Specific User From The Database
         /// </summary>
         /// <param name="username"></param>
-        public async void delplr(string username)
+        public async void delplr(string username, string tbl)
         {
             var values = new Dictionary<string, string>
             {
@@ -97,7 +92,7 @@ namespace WebIntegrationPlayers.DataBase
                 { "dbuser", $"{User}" },
                 { "dbpass", $"{Pass}" },
                 { "dbname", $"{DBName}" },
-                { "dbtable", $"{TableName}" },
+                { "dbtable", $"{tbl}" },
                 { "idcol", $"{IDCol}" },
                 { "usercol", $"{UsernameCol}" },
                 { "rankcol", $"{UserRankCol}" }
@@ -113,7 +108,7 @@ namespace WebIntegrationPlayers.DataBase
         /// <summary>
         /// Clear All Players From The Server Database List
         /// </summary>
-        public async void clearall()
+        public async void clearall(string tbl)
         {
             var values = new Dictionary<string, string>
             {
@@ -123,7 +118,7 @@ namespace WebIntegrationPlayers.DataBase
                 { "dbuser", $"{User}" },
                 { "dbpass", $"{Pass}" },
                 { "dbname", $"{DBName}" },
-                { "dbtable", $"{TableName}" }
+                { "dbtable", $"{tbl}" }
             };
 
             var content = new FormUrlEncodedContent(values);

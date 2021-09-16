@@ -29,13 +29,13 @@ namespace WebIntegrationPlayers.DataBase.Configs
         /// The Password For The MySql Server
         /// </summary>
         [Description("The Password For The MySql Server")]
-        public string DBPass { get; set; } = "";
+        public string dbPass { get; set; } = "";
 
         /// <summary>
         /// The Database Name For The MySql Server
         /// </summary>
         [Description("The Database Name You Created In The MySql Server")]
-        public string DBName { get; set; } = "wi_players";
+        public string dbName { get; set; } = "wi_players";
 
         /// <summary>
         /// The Table Name Inside The MySql Server
