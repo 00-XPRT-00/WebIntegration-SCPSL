@@ -1,4 +1,4 @@
-﻿using Exiled.Events.EventArgs;
+﻿using Exiled.API.Features;
 
 namespace WebIntegrationPlayers.Events
 {
@@ -6,11 +6,11 @@ namespace WebIntegrationPlayers.Events
     {
         private DataBase.DataBase db;
         /// <summary>
-        /// When A Round Ends
+        /// When The Server Is Waiting For Players
         /// </summary>
-        /// <param name="ev"></param>
-        public void RoundEnd(EndingRoundEventArgs ev)
+        public void OnWaitingForPlayers()
         {
+            Log.Info(WebIntegrationPlayers.Instance.Config.WaitingForPlayers);
             db = new DataBase.DataBase();
             db.clearall();
         }

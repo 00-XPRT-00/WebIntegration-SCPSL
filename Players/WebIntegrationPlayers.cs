@@ -46,7 +46,7 @@ namespace WebIntegrationPlayers
 
             Player.Left += player.OnLeft;
             Player.Verified += player.OnJoin;
-            Server.EndingRound += server.RoundEnd;
+            Server.WaitingForPlayers += server.OnWaitingForPlayers;
         }
 
         public void unRegisterEvents()
@@ -56,7 +56,7 @@ namespace WebIntegrationPlayers
 
             Player.Left -= player.OnLeft;
             Player.Verified -= player.OnJoin;
-            Server.EndingRound -= server.RoundEnd;
+            Server.WaitingForPlayers -= server.OnWaitingForPlayers;
 
             player = null;
             server = null;

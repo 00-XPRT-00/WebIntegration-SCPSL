@@ -14,6 +14,18 @@ namespace WebIntegrationPlayers
         /// </summary>
         [Description("Wether or not the plugin is active")]
         public bool IsEnabled { get; set; } = true;
+        
+        [Description("The message sent when the server is waiting for players to join")]
+        public string WaitingForPlayers { get; set; } = "Server Is Waiting For Players.";
+
+        [Description("The message sent when someone joins the server (default will show: 'Player [2] Administrator: Admin Joined The Game.' Variables = {userid}, {username}, {userrank})")]
+        public string PlayerJoin { get; set; } = "Player [{userid}] {username}: {userrank} Joined The Game.";
+
+        [Description("The message sent when someone leaves the server (default will show: 'Player [2] Administrator Left The Game.' Variables = {userid}, {username}")]
+        public string PlayerLeave { get; set; } = "Player [{userid}] {username} Joined The Game.";
+
+        [Description("The rank that will show in the console join message and on the player list for a user with no ranks")]
+        public string DefaultRank { get; set; } = "player";
 
         /// <summary>
         /// The webserver url hosting the scp-server folder

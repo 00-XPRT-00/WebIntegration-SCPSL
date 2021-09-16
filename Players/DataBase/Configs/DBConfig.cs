@@ -11,19 +11,19 @@ namespace WebIntegrationPlayers.DataBase.Configs
         /// The Host IP For The MySql Server
         /// </summary>
         [Description("The Host IP For The MySql Server")]
-        public string DBHost { get; set; } = "127.0.0.1";
+        public string dbHost { get; set; } = "127.0.0.1";
 
         /// <summary>
         /// The Host Port For The MySql Server
         /// </summary>
         [Description("The Host Port For The MySql Server")]
-        public string DBPort { get; set; } = "3306";
+        public string dbPort { get; set; } = "3306";
 
         /// <summary>
         /// The Username For The MySql Server
         /// </summary>
         [Description("The Username For The MySql Server")]
-        public string DBUser { get; set; } = "root";
+        public string dbUser { get; set; } = "root";
 
         /// <summary>
         /// The Password For The MySql Server
@@ -40,8 +40,8 @@ namespace WebIntegrationPlayers.DataBase.Configs
         /// <summary>
         /// The Table Name Inside The MySql Server
         /// </summary>
-        [Description("The Table Name Inside The Database In The MySql Server")]
-        public string Table_Name { get; set; } = "wi_players";
+        [Description("The Table Name Inside The Database In The MySql Server (if more than 1 server it will need another table created with _2 added or _3 so on for how many servers you are running also you dont need to add them to this config)")]
+        public string TableName { get; set; } = "wi_players";
 
         /// <summary>
         /// The User Id Col Inside Table

@@ -17,7 +17,11 @@ namespace WebIntegrationPlayers.Events
         {
             database = new DataBase.DataBase();
             string uname = ev.Player.Nickname;
-            Log.Info($"Player {uname} Left The Game");
+            int uid = ev.Player.Id;
+            string leavemsg = WebIntegrationPlayers.Instance.Config.PlayerLeave;
+            leavemsg = leavemsg.Replace("{userid}", $"{uid}");
+            leavemsg = leavemsg.Replace("{username}", $"{uname}");
+            Log.Info(leavemsg);
             database.delplr(uname);
         }
 
@@ -31,7 +35,12 @@ namespace WebIntegrationPlayers.Events
             int uid = ev.Player.Id;
             string uname = ev.Player.Nickname;
             string rank = ev.Player.GroupName;
-            Log.Info($"Player [{uid}] {uname} {rank} Joined The Game");
+            if (ev.Player.GroupName == "") { rank = WebIntegrationPlayers.Instance.Config.DefaultRank; }
+            string joinmsg = WebIntegrationPlayers.Instance.Config.PlayerJoin;
+            joinmsg = joinmsg.Replace("{userid}",$"{uid}");
+            joinmsg = joinmsg.Replace("{username}",$"{uname}");
+            joinmsg = joinmsg.Replace("{userrank}",$"{rank}");
+            Log.Info(joinmsg);
             database.insplr(uid, uname, rank);
         }
     }

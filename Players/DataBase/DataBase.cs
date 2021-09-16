@@ -11,15 +11,15 @@ namespace WebIntegrationPlayers.DataBase
         /// <summary>
         /// The Host IP For The MySql Database
         /// </summary>
-        public string Host { get; } = WebIntegrationPlayers.Instance.Config.db.DBHost;
+        public string Host { get; } = WebIntegrationPlayers.Instance.Config.db.dbHost;
         /// <summary>
         /// The Host Port MySql Server
         /// </summary>
-        public string Port { get; } = WebIntegrationPlayers.Instance.Config.db.DBPort;
+        public string Port { get; } = WebIntegrationPlayers.Instance.Config.db.dbPort;
         /// <summary>
         /// The MySql Server Username To Login With
         /// </summary>
-        public string User { get; } = WebIntegrationPlayers.Instance.Config.db.DBUser;
+        public string User { get; } = WebIntegrationPlayers.Instance.Config.db.dbUser;
         /// <summary>
         /// The MySql Server Password
         /// </summary>
@@ -33,7 +33,7 @@ namespace WebIntegrationPlayers.DataBase
         /// <summary>
         /// The MySql Server Table Name
         /// </summary>
-        public string TableName { get; } = WebIntegrationPlayers.Instance.Config.db.Table_Name;
+        public string TableName { get; } = WebIntegrationPlayers.Instance.Config.db.TableName;
 
         /// <summary>
         /// The Name For The User ID Column In The Table
@@ -51,6 +51,12 @@ namespace WebIntegrationPlayers.DataBase
         public string UserRankCol { get; } = WebIntegrationPlayers.Instance.Config.db.Table_ur_col;
 
         private static readonly HttpClient client = new HttpClient();
+        /// <summary>
+        /// Insert A Player Into The Database
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="username"></param>
+        /// <param name="rank"></param>
         public async void insplr(int id, string username, string rank)
         {
             var values = new Dictionary<string, string>
@@ -76,7 +82,10 @@ namespace WebIntegrationPlayers.DataBase
 
             var responseString = await response.Content.ReadAsStringAsync();
         }
-
+        /// <summary>
+        /// Delete A Specific User From The Database
+        /// </summary>
+        /// <param name="username"></param>
         public async void delplr(string username)
         {
             var values = new Dictionary<string, string>
@@ -101,6 +110,9 @@ namespace WebIntegrationPlayers.DataBase
             var responseString = await response.Content.ReadAsStringAsync();
         }
 
+        /// <summary>
+        /// Clear All Players From The Server Database List
+        /// </summary>
         public async void clearall()
         {
             var values = new Dictionary<string, string>
