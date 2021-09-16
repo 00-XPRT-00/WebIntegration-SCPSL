@@ -84,3 +84,7 @@ G:\WebIntegration-Exiled\WebIntegration\Players\bin\Debug\WebIntegrationPlayers.
 G:\WebIntegration-Exiled\WebIntegration\Players\obj\Debug\WebIntegrationPlayers.dll
 G:\WebIntegration-Exiled\WebIntegration\Players\obj\Debug\WebIntegrationPlayers.pdb
 G:\WebIntegration-Exiled\WebIntegration\Players\bin\Debug\Exiled.API.dll
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players\obj\Debug\Players.csproj.AssemblyReference.cache
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players\obj\Debug\Players.csproj.CoreCompileInputs.cache
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players\obj\Debug\WebIntegrationPlayers.dll
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players\obj\Debug\WebIntegrationPlayers.pdb

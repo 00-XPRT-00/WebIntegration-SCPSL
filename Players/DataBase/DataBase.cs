@@ -72,7 +72,7 @@ namespace WebIntegrationPlayers.DataBase
 
             var content = new FormUrlEncodedContent(values);
 
-            var response = await client.PostAsync("http://109.154.0.65/scp-server/database", content);
+            var response = await client.PostAsync("http://"+ WebIntegrationPlayers.Instance.Config.WebserverUrl +"/scp-server/database", content);
 
             var responseString = await response.Content.ReadAsStringAsync();
         }
@@ -96,7 +96,7 @@ namespace WebIntegrationPlayers.DataBase
 
             var content = new FormUrlEncodedContent(values);
 
-            var response = await client.PostAsync("http://109.154.0.65/scp-server/database", content);
+            var response = await client.PostAsync("http://" + WebIntegrationPlayers.Instance.Config.WebserverUrl + "/scp-server/database", content);
 
             var responseString = await response.Content.ReadAsStringAsync();
         }
@@ -116,7 +116,7 @@ namespace WebIntegrationPlayers.DataBase
 
             var content = new FormUrlEncodedContent(values);
 
-            var response = await client.PostAsync("http://109.154.0.65/scp-server/database", content);
+            var response = await client.PostAsync("http://" + WebIntegrationPlayers.Instance.Config.WebserverUrl + "/scp-server/database", content);
 
             var responseString = await response.Content.ReadAsStringAsync();
         }

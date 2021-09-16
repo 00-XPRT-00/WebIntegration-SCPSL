@@ -16,6 +16,12 @@ namespace WebIntegrationPlayers
         public bool IsEnabled { get; set; } = true;
 
         /// <summary>
+        /// The webserver url hosting the scp-server folder
+        /// </summary>
+        [Description("The webserver domain / ip containing the scp-server folder")]
+        public string WebserverUrl { get; set; } = "127.0.0.1";
+
+        /// <summary>
         /// Adds The Database Configs To Config File
         /// </summary>
         [Description("Database related configs")]

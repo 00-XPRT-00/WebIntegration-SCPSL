@@ -3,7 +3,8 @@ A Integrated Web Plugin For SCPSL Servers
 
 Pre Requisites
 ==============
-- XAMPP - Running MySql And Apache
+- Website With PHP And FTP Access or XAMPP running Apache
+- MySQL / MariaDB Database e.g XAMPP running MySql
 
 
 
@@ -23,6 +24,7 @@ Config
 
 Database Configuration (skip to 5th if you are hosting locally and have not added a password to the root account)
 ======================
+- Web Address - The IP / Domain For The Server Hosting The scp-server folder (only the domain no "/" e.g example.com/scp-server is where the folder should be located but put only example.com or a public ip address also do not need to specify www or http / https)
 - Host IP - The Public IP For The Machine Hosting The Database
 - Host Port - The Database Port (default is 3306)
 - Username - The Login Username
