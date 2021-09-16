@@ -1,5 +1,6 @@
 # WebIntegration-SCPSL
 A Integrated Web Plugin For SCPSL Servers
+Works With 4 Servers (NAME MUST BE SAME ex. 'Garrys Server 1' and 'Garrys Modded Server 2' wouldnt work has to be: 'Garrys Server 1' and 'Garrys Server 2' so on)
 
 Pre Requisites
 ==============
