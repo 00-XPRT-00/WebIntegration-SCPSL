@@ -12,11 +12,11 @@ namespace WebIntegrationPlayers
     /// </summary>
     public class WebIntegrationPlayers : Plugin<Config>
     {
-        private static readonly Lazy<WebIntegrationPlayers> InstanceValue = new Lazy<WebIntegrationPlayers>(() => new WebIntegrationPlayers());
+        private static readonly WebIntegrationPlayers InstanceValue = new WebIntegrationPlayers();
         /// <summary>
         /// Gets the <see cref="WebIntegrationPlayers"/> instance.
         /// </summary>
-        public static WebIntegrationPlayers Instance => InstanceValue.Value;
+        public static WebIntegrationPlayers Instance => InstanceValue;
 
         public override PluginPriority Priority { get; } = PluginPriority.Medium;
 
