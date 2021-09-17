@@ -29,7 +29,7 @@ namespace WebIntegrationPlayers
 
         // When A Player Leaves Message
         [Description("The message sent when someone leaves the server (default will show: 'Player [2] Administrator Left The Game.' Variables = {userid}, {username}")]
-        public string PlayerLeave { get; set; } = "Player [{userid}] {username} Joined The Game.";
+        public string PlayerLeave { get; set; } = "Player [{userid}] {username} Left The Game.";
 
         // The Rank Shown For People With No Ranks
         [Description("The rank that will show in the console join message and on the player list for a user with no ranks")]
