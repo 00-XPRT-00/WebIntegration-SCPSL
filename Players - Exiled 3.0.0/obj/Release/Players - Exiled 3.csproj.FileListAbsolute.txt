@@ -12,3 +12,4 @@ C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players - Exiled 3.0.0\obj\R
 C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players - Exiled 3.0.0\obj\Release\Players - Exiled 3.csproj.CopyComplete
 C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players - Exiled 3.0.0\obj\Release\WebIntegrationPlayers.dll
 C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players - Exiled 3.0.0\obj\Release\WebIntegrationPlayers.pdb
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players - Exiled 3.0.0\obj\Release\Players - Exiled 3.csproj.AssemblyReference.cache
