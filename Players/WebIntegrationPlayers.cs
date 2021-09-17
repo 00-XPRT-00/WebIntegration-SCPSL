@@ -1,6 +1,5 @@
 ﻿using Exiled.API.Enums;
 using Exiled.API.Features;
-
 using Server = Exiled.Events.Handlers.Server;
 using Player = Exiled.Events.Handlers.Player;
 using System;
@@ -12,13 +11,20 @@ namespace WebIntegrationPlayers
     /// </summary>
     public class WebIntegrationPlayers : Plugin<Config>
     {
-        private static readonly WebIntegrationPlayers InstanceValue = new WebIntegrationPlayers();
         /// <summary>
-        /// Gets the <see cref="WebIntegrationPlayers"/> instance.
+        /// Set The InstanceValue
         /// </summary>
-        public static WebIntegrationPlayers Instance => InstanceValue;
+        internal static WebIntegrationPlayers Instance;
 
-        public override PluginPriority Priority { get; } = PluginPriority.Medium;
+        public override string Author => "00-XPRT-00";
+        public override string Name => "WebIntegrationPlayers";
+        public override Version Version => new Version(1, 1, 0);
+        public override Version RequiredExiledVersion => new Version(2, 14, 0);
+
+        /// <summary>
+        /// The Load Piority
+        /// </summary>
+        public override PluginPriority Priority => PluginPriority.Medium;
 
         private Events.PlayerEvents player;
         private Events.ServerEvents server;
@@ -30,6 +36,7 @@ namespace WebIntegrationPlayers
 
         public override void OnEnabled()
         {
+            Instance = this;
             RegisterEvents();
             Log.Info("Plugin Loaded");
         }
@@ -39,6 +46,9 @@ namespace WebIntegrationPlayers
             unRegisterEvents();   
         }
 
+        /// <summary>
+        /// Registering The Plugins Events
+        /// </summary>
         public void RegisterEvents()
         {
             player = new Events.PlayerEvents();
@@ -48,7 +58,10 @@ namespace WebIntegrationPlayers
             Player.Verified += player.OnJoin;
             Server.WaitingForPlayers += server.OnWaitingForPlayers;
         }
-
+        
+        /// <summary>
+        /// Unregistering The Events
+        /// </summary>
         public void unRegisterEvents()
         {
             player = new Events.PlayerEvents();

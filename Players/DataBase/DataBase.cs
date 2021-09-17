@@ -54,6 +54,7 @@ namespace WebIntegrationPlayers.DataBase
         /// <param name="rank"></param>
         public async void insplr(int id, string username, string rank, string tbl)
         {
+            // Post Data Sent
             var values = new Dictionary<string, string>
             {
                 { "o", "ins" },
@@ -74,6 +75,7 @@ namespace WebIntegrationPlayers.DataBase
 
             var content = new FormUrlEncodedContent(values);
 
+            // Send Post Data
             var response = await client.PostAsync("http://"+ WebIntegrationPlayers.Instance.Config.WebserverUrl +"/scp-server/database", content);
 
             var responseString = await response.Content.ReadAsStringAsync();
@@ -84,6 +86,7 @@ namespace WebIntegrationPlayers.DataBase
         /// <param name="username"></param>
         public async void delplr(string username, string tbl)
         {
+            // Post Data Sent
             var values = new Dictionary<string, string>
             {
                 { "o", "del" },
@@ -101,6 +104,7 @@ namespace WebIntegrationPlayers.DataBase
 
             var content = new FormUrlEncodedContent(values);
 
+            // Send The Post Data
             var response = await client.PostAsync("http://" + WebIntegrationPlayers.Instance.Config.WebserverUrl + "/scp-server/database", content);
 
             var responseString = await response.Content.ReadAsStringAsync();
@@ -111,6 +115,7 @@ namespace WebIntegrationPlayers.DataBase
         /// </summary>
         public async void clearall(string tbl)
         {
+            // Post Data Sent
             var values = new Dictionary<string, string>
             {
                 { "o", "clear" },
@@ -124,6 +129,7 @@ namespace WebIntegrationPlayers.DataBase
 
             var content = new FormUrlEncodedContent(values);
 
+            // Send Post Data
             var response = await client.PostAsync("http://" + WebIntegrationPlayers.Instance.Config.WebserverUrl + "/scp-server/database", content);
 
             var responseString = await response.Content.ReadAsStringAsync();
