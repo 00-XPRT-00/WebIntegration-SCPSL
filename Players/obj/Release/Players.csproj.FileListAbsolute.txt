@@ -1,0 +1,11 @@
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players\bin\Release\WebIntegrationPlayers.dll.config
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players\bin\Release\WebIntegrationPlayers.dll
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players\bin\Release\WebIntegrationPlayers.pdb
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players\bin\Release\Exiled.API.dll
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players\bin\Release\Exiled.Events.dll
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players\bin\Release\Exiled.Permissions.dll
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players\obj\Release\Players.csproj.AssemblyReference.cache
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players\obj\Release\Players.csproj.CoreCompileInputs.cache
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players\obj\Release\Players.csproj.CopyComplete
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players\obj\Release\WebIntegrationPlayers.dll
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players\obj\Release\WebIntegrationPlayers.pdb

@@ -71,10 +71,10 @@
       <HintPath>C:\Users\LJ13ELL\Desktop\MC\web\server\scp\servers\SCPSL_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Exiled.API">
-      <HintPath>C:\Users\LJ13ELL\AppData\Roaming\EXILED\Plugins\dependencies\Exiled.API.dll</HintPath>
+      <HintPath>..\..\..\AppData\Roaming\EXILED\Plugins\dependencies\Exiled.API.dll</HintPath>
     </Reference>
     <Reference Include="Exiled.Events">
-      <HintPath>C:\Users\LJ13ELL\AppData\Roaming\EXILED\Plugins\Exiled.Events.dll</HintPath>
+      <HintPath>..\..\..\AppData\Roaming\EXILED\Plugins\Exiled.Events.dll</HintPath>
     </Reference>
     <Reference Include="Exiled.Loader">
       <HintPath>C:\Users\LJ13ELL\AppData\Roaming\EXILED\Exiled.Loader.dll</HintPath>

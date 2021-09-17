@@ -11,7 +11,7 @@ namespace WebIntegrationPlayers.DataBase.Configs
         /// The Host IP For The MySql Server
         /// </summary>
         [Description("The Host IP For The MySql Server")]
-        public string dbHost { get; set; } = "127.0.0.1";
+        public string dbHost { get; set; } = "localhost";
 
         /// <summary>
         /// The Host Port For The MySql Server
