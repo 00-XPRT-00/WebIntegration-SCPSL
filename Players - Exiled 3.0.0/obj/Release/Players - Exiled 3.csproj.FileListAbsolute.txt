@@ -1,0 +1,14 @@
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players - Exiled 3.0.0\bin\Release\WebIntegrationPlayers.dll.config
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players - Exiled 3.0.0\bin\Release\WebIntegrationPlayers.dll
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players - Exiled 3.0.0\bin\Release\WebIntegrationPlayers.pdb
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players - Exiled 3.0.0\bin\Release\Assembly-CSharp.dll
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players - Exiled 3.0.0\bin\Release\Exiled.API.dll
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players - Exiled 3.0.0\bin\Release\Exiled.Events.dll
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players - Exiled 3.0.0\bin\Release\System.Memory.dll
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players - Exiled 3.0.0\bin\Release\System.Buffers.dll
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players - Exiled 3.0.0\bin\Release\Exiled.Loader.dll
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players - Exiled 3.0.0\bin\Release\System.Numerics.Vectors.dll
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players - Exiled 3.0.0\obj\Release\Players - Exiled 3.csproj.CoreCompileInputs.cache
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players - Exiled 3.0.0\obj\Release\Players - Exiled 3.csproj.CopyComplete
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players - Exiled 3.0.0\obj\Release\WebIntegrationPlayers.dll
+C:\Users\liamr\WebIntegration-Exiled\WebIntegration\Players - Exiled 3.0.0\obj\Release\WebIntegrationPlayers.pdb
