@@ -7,7 +7,7 @@ Works With 4 Servers (NAME MUST BE SAME ex. 'Garrys Server 1' and 'Garrys Modded
 
 After Installing And Configuring
 ================================
-Players Will Be Logged To {web address}/scp-server/player-list
+Players Will Be Logged To {web_address}/scp-server/player-list if you have more than one server others are accessible from {web_address}/scp-server/player-list-{server_num}
 
 Pre Requisites
 ==============

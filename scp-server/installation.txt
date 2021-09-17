@@ -1,0 +1,6 @@
+To Install Follow These Steps
+
+You Do NOT Need To Change Anything In "auto-config.json" It Will Update Automatically
+
+1. Drag "scp-server" folder into your xampp htdocs folder (located in your xampp install folder)
+2. if not already start apache from the xampp control panel
